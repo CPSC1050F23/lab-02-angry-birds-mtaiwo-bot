@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "2. Bird Hits the Pig",
+      "setup": "",
+      "run": "python lab02.py",
+      "input": "50\r\n25\r\n10\r\n37.16\r\n16.515\r\n1.28",
+      "output": "Welcome to the Angry Birds aimbot! Go pig or go home!\r\nWhat is the bird's initial velocity?\r\nWhat is the bird's launch angle in degrees?\r\nWhat is the height of the slingshot in feet?\r\nDuration of flight: 1.31 seconds\r\nBird's maximum horizontal distance: 59.56 feet\r\nMax height of the bird: 16.94 feet\r\nEnter the x-coordinate of the pig:\r\nEnter the y-coordinate of the pig:\r\nStraight-line distance to the pig: 37.73 feet\r\nThe bird will be over the pig at time 0.82 seconds. The bird will be 0.00 feet above the pig.\r\nEnter the time in seconds to calculate the bird's position:\r\nCoordinates of bird at 1.28 seconds: (58.00, 10.71)",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "3. Bird Above the Pig",
+      "setup": "",
+      "run": "python lab02.py",
+      "input": "30.0\r\n45.0\r\n10.0\r\n15.0\r\n10.0\r\n0.3",
+      "output": "Welcome to the Angry Birds aimbot! Go pig or go home!\r\nWhat is the bird's initial velocity?\r\nWhat is the bird's launch angle in degrees?\r\nWhat is the height of the slingshot in feet?\r\nDuration of flight: 1.32 seconds\r\nBird's maximum horizontal distance: 27.99 feet\r\nMax height of the bird: 17.00 feet\r\nEnter the x-coordinate of the pig:\r\nEnter the y-coordinate of the pig:\r\nStraight-line distance to the pig: 15.00 feet\r\nThe bird will be over the pig at time 0.71 seconds. The bird will be 6.96 feet above the pig.\r\nEnter the time in seconds to calculate the bird's position:\r\nCoordinates of bird at 0.3 seconds: (6.36, 14.92)",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "4. Bird Below the Pig",
+      "setup": "",
+      "run": "python lab02.py",
+      "input": "10.0\r\n60.5\r\n5.0\r\n3.1\r\n5.6\r\n0.1",
+      "output": "Welcome to the Angry Birds aimbot! Go pig or go home!\r\nWhat is the bird's initial velocity?\r\nWhat is the bird's launch angle in degrees?\r\nWhat is the height of the slingshot in feet?\r\nDuration of flight: 0.54 seconds\r\nBird's maximum horizontal distance: 2.67 feet\r\nMax height of the bird: 6.18 feet\r\nEnter the x-coordinate of the pig:\r\nEnter the y-coordinate of the pig:\r\nStraight-line distance to the pig: 3.16 feet\r\nThe bird will be over the pig at time 0.63 seconds. The bird will be -1.49 feet above the pig.\r\nEnter the time in seconds to calculate the bird's position:\r\nCoordinates of bird at 0.1 seconds: (0.49, 5.71)",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "5. Mystery Flight Trajectory",
+      "setup": "",
+      "run": "python lab02.py",
+      "input": "40\r\n45\r\n15.6\r\n16\r\n7\r\n1.105",
+      "output": "Welcome to the Angry Birds aimbot! Go pig or go home!\r\nWhat is the bird's initial velocity?\r\nWhat is the bird's launch angle in degrees?\r\nWhat is the height of the slingshot in feet?\r\nDuration of flight: 1.76 seconds\r\nBird's maximum horizontal distance: 49.76 feet\r\nMax height of the bird: 28.04 feet\r\nEnter the x-coordinate of the pig:\r\nEnter the y-coordinate of the pig:\r\nStraight-line distance to the pig: 18.16 feet\r\nThe bird will be over the pig at time 0.57 seconds. The bird will be 19.46 feet above the pig.\r\nEnter the time in seconds to calculate the bird's position:\r\nCoordinates of bird at 1.105 seconds: (31.25, 27.22)",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 4
+    }
+  ]
+}
