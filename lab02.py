@@ -32,13 +32,13 @@ print("What is the height of the slingshot in feet?")
 h = float(input())
 
 # Calculate the duration of the flight in seconds
-time = (2 * intial_velocity * math.sin(theta))/GRAVITY
+time = (2 * intial_velocity * math.sin(theta_radians))/GRAVITY
 
 # Calculate the maximum horizontal distance
-horizontal_distance = intial_velocity * math.cos(theta) * time
+horizontal_distance = intial_velocity * math.cos(theta_radians) * time
 
 # Calculate the maximum height
-height = h + (intial_velocity * math.sin(theta))**2/2*GRAVITY
+height = h + (intial_velocity * math.sin(theta_radians))**2/2*GRAVITY
 
 # Print out the calculated metrics like below. Replace X with the calculated numbers. Shorten the numbers to 2 significant figures (0.02, 12.44, etc.)
     # Duration of flight: seconds
