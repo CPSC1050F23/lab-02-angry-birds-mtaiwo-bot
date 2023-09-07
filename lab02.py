@@ -56,12 +56,12 @@ print(horizontal_distance)
 
 # STEP 2
 
-print("Enter the x-coordinate of the pig: {x1:.2f}")
+
 # Get the pig's x-coordinate as input
 x1 = float(input("Enter the x-coordinate of the pig:"))
 x2 = 0
  
-print("Enter the y-coordinate of the pig: {y1:.2f}")
+print("Enter the y-coordinate of the pig:")
 # Get the pig's y-coordinate as input
 y1 = float(input("Enter the y-coordinate of the pig:"))
 y2 = h 
@@ -93,11 +93,11 @@ print(f"The bird will be over the pig at time: {new_time:.2f} seconds. The bird 
 
 print("Enter the time in seconds to calculate the bird's position:")
 # Get the time as input
-new_time = float(input())
+time = float(input())
 
 # Calculate the x and y coordinates of the bird at the inputted time
-horizontal_position = intial_velocity*math.cos(theta_radians)*new_time
-vertical_position = slingshot_height + intial_velocity*math.sin(theta_radians)*new_time - 0.5*GRAVITY*new_time**2
+horizontal_position = intial_velocity*math.cos(theta_radians)*time
+vertical_position = slingshot_height + intial_velocity*math.sin(theta_radians)*time - 0.5*GRAVITY*time**2
 # Print the results like below. Replace X & Y with calculated numbers. Shorten the numbers to 2 significant figures (0.02, 12.44, etc.)
     # Coordinates of bird at X seconds: X, Y
-print(f'Coordinates of bird at {new_time} seconds: ({horizontal_position:.2f}, {vertical_position:.2f}')
+print(f'Coordinates of bird at {time} seconds: ({horizontal_position:.2f}, {vertical_position:.2f}')
