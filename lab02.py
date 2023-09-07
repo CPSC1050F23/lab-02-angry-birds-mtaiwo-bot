@@ -58,12 +58,12 @@ print(horizontal_distance)
 
 print("Enter the x-coordinate of the pig:")
 # Get the pig's x-coordinate as input
-x1 = float(input())
+x1 = float(input("Enter the x-coordinate of the pig:"))
 x2 = 0
 
 print("Enter the y-coordinate of the pig:")
 # Get the pig's y-coordinate as input
-y1 = float(input())
+y1 = float(input("Enter the y-coordinate of the pig:"))
 y2 = h 
 
 # Calculate the straight-line distance from the bird & slingshot to the pig
@@ -79,7 +79,7 @@ print(f"Straight-line distance to the pig: {straight_line_distance:.2f} feet")
 new_time = x1/intial_velocity*math.cos(theta_radians)
 
 # Calculate the y-position of the bird at the time it is directly over pig
-vertical_height = slingshot_height +intial_velocity*math.sin(theta_radians)*new_time - 0.5*GRAVITY**2
+vertical_height = slingshot_height + intial_velocity*math.sin(theta_radians)*new_time - 0.5*GRAVITY**2
 
 # Difference between the birds height and the pig's height:
 vertical_distance = vertical_height - y1
