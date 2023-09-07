@@ -38,7 +38,7 @@ time = (2 * intial_velocity * math.sin(theta_radians))/GRAVITY
 horizontal_distance = intial_velocity * math.cos(theta_radians) * time
 
 # Calculate the maximum height
-height = h + (intial_velocity * math.sin(theta_radians))**2/2*GRAVITY
+height = h + (intial_velocity * math.sin(theta))**2/2*GRAVITY
 
 # Print out the calculated metrics like below. Replace X with the calculated numbers. Shorten the numbers to 2 significant figures (0.02, 12.44, etc.)
     # Duration of flight: seconds
