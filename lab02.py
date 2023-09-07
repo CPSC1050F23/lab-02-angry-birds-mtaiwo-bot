@@ -49,9 +49,9 @@ print(f"Bird's maximum horizontal distance: {horizontal_distance:.2f} feet")
 print(f"Max height of the bird: {height:.2f} feet")
    
     # The duration of the bird's flight in seconds
-print(time)
+print(f'{time:.2f}')
     # The bird's maximum possible horizontal distance
-print(horizontal_distance)
+print(f'{horizontal_distance:.2f}')
 
 
 # STEP 2
@@ -59,13 +59,13 @@ print(horizontal_distance)
 
 # Get the pig's x-coordinate as input
 print("Enter the x-coordinate of the pig:")
-
+x1 = float(input())
 x2 = 0
  
 print("Enter the y-coordinate of the pig:")
 # Get the pig's y-coordinate as input
-y1 = float(input("Enter the y-coordinate of the pig:"))
-y2 = h 
+y1 = float(input())
+y2 = slingshot_height 
 
 # Calculate the straight-line distance from the bird & slingshot to the pig
 straight_line_distance = math.sqrt((x1-x2)**2+(y1-y2)**2)
@@ -77,17 +77,17 @@ straight_line_distance = math.sqrt((x1-x2)**2+(y1-y2)**2)
 print(f"Straight-line distance to the pig: {straight_line_distance:.2f} feet")
 
 # Calculate the time when the bird is directly over the pig (x1, y1)
-new_time = x1/intial_velocity*math.cos(theta_radians)
+pig_time = x1/intial_velocity*math.cos(theta_radians)
 
 # Calculate the y-position of the bird at the time it is directly over pig
-vertical_height = slingshot_height + intial_velocity*math.sin(theta_radians)*new_time - 0.5*GRAVITY**2
+vertical_height = slingshot_height + intial_velocity*math.sin(theta_radians)*pig_time - 0.5*GRAVITY**2
 
 # Difference between the birds height and the pig's height:
 vertical_distance = vertical_height - y1
 
 # Print it out as below. Replace X with the calculated numbers. Shorten the numbers to 2 significant figures (0.02, 12.44, etc.)
     # The bird will be over the pig at time X seconds. The bird will be X feet above the pig.
-print(f"The bird will be over the pig at time: {new_time:.2f} seconds. The bird will be: {vertical_height:.2f} feet above the pig")
+print(f"The bird will be over the pig at time: {pig_time:.2f} seconds. The bird will be: {vertical_height:.2f} feet above the pig")
 
 
 # STEP 3
@@ -98,7 +98,7 @@ time = float(input())
 
 # Calculate the x and y coordinates of the bird at the inputted time
 horizontal_position = intial_velocity*math.cos(theta_radians)*time
-vertical_position = slingshot_height + intial_velocity*math.sin(theta_radians)*time - 0.5*GRAVITY*time**2
+vertical_position = slingshot_height + intial_velocity*(math.sin(theta_radians))*time - 0.5*GRAVITY*(time**2)
 # Print the results like below. Replace X & Y with calculated numbers. Shorten the numbers to 2 significant figures (0.02, 12.44, etc.)
     # Coordinates of bird at X seconds: X, Y
 print(f'Coordinates of bird at {time} seconds: ({horizontal_position:.2f}, {vertical_position:.2f}')
