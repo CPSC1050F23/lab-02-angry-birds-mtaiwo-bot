@@ -86,7 +86,7 @@ vertical_distance = vertical_height - y1
 
 # Print it out as below. Replace X with the calculated numbers. Shorten the numbers to 2 significant figures (0.02, 12.44, etc.)
     # The bird will be over the pig at time X seconds. The bird will be X feet above the pig.
-print(f"The bird will be over the pig at time: {pig_time:.2f} seconds. The bird will be: {vertical_height:.2f} feet above the pig")
+print(f"The bird will be over the pig at time: {pig_time:.2f} seconds. The bird will be: {vertical_distance:.2f} feet above the pig")
 
 
 # STEP 3
