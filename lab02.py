@@ -29,7 +29,7 @@ theta_radians = math.radians(theta)
 
 print("What is the height of the slingshot in feet?")
 # Get the height of the slingshot as input
-h = float(input())
+slingshot_height = float(input())
 
 # Calculate the duration of the flight in seconds
 time = (2 * intial_velocity * math.sin(theta_radians))/GRAVITY
@@ -38,7 +38,7 @@ time = (2 * intial_velocity * math.sin(theta_radians))/GRAVITY
 horizontal_distance = intial_velocity * math.cos(theta_radians) * time
 
 # Calculate the maximum height
-height = h + ((intial_velocity * math.sin(theta_radians))**2/2*GRAVITY)
+height = (slingshot_height) + ((intial_velocity*math.sin(theta_radians))**2)/(2*GRAVITY)
 
 # Print out the calculated metrics like below. Replace X with the calculated numbers. Shorten the numbers to 2 significant figures (0.02, 12.44, etc.)
     # Duration of flight: seconds
@@ -79,7 +79,7 @@ print(f"Straight-line distance to the pig: {straight_line_distance:.2f} feet")
 new_time = x1/intial_velocity*math.cos(theta_radians)
 
 # Calculate the y-position of the bird at the time it is directly over pig
-vertical_height = h +intial_velocity*math.sin(theta_radians)*new_time - 0.5*GRAVITY**2
+vertical_height = slingshot_height +intial_velocity*math.sin(theta_radians)*new_time - 0.5*GRAVITY**2
 
 # Difference between the birds height and the pig's height:
 vertical_distance = vertical_height - y1
@@ -96,8 +96,8 @@ print("Enter the time in seconds to calculate the bird's position:")
 new_time = float(input())
 
 # Calculate the x and y coordinates of the bird at the inputted time
-horizontal_position = intial_velocity*math.cos(launch_angle_radians)*new_time
-vertical_position = slingshot_height + intial_velocity*math.sin(launch_angle_radians)*new_time - 0.5*GRAVITY*new_time**2
+horizontal_position = intial_velocity*math.cos(theta_radians)*new_time
+vertical_position = slingshot_height + intial_velocity*math.sin(theta_radians)*new_time - 0.5*GRAVITY*new_time**2
 # Print the results like below. Replace X & Y with calculated numbers. Shorten the numbers to 2 significant figures (0.02, 12.44, etc.)
     # Coordinates of bird at X seconds: X, Y
 print(f'Coordinates of bird at {new_time} seconds: ({horizontal_position:.2f}, {vertical_position:.2f}')
