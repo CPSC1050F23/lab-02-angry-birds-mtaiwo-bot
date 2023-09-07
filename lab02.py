@@ -68,7 +68,7 @@ y1 = float(input())
 y2 = slingshot_height 
 
 # Calculate the straight-line distance from the bird & slingshot to the pig
-straight_line_distance = math.sqrt((x1-x2)**2+(y1-y2)**2)
+straight_line_distance = math.sqrt((x1-x2)**2 + (y1-y2)**2)
 #x1,y1 are the pigs coordinates.
 #x2,y2 are the birds from the slingshot so 0 and the height of the slingshot.
 
@@ -77,10 +77,10 @@ straight_line_distance = math.sqrt((x1-x2)**2+(y1-y2)**2)
 print(f"Straight-line distance to the pig: {straight_line_distance:.2f} feet")
 
 # Calculate the time when the bird is directly over the pig (x1, y1)
-pig_time = x1/intial_velocity*math.cos(theta_radians)
+pig_time = x1/(intial_velocity*math.cos(theta_radians))
 
 # Calculate the y-position of the bird at the time it is directly over pig
-vertical_height = slingshot_height + intial_velocity*math.sin(theta_radians)*pig_time - 0.5*GRAVITY**2
+vertical_height = slingshot_height + intial_velocity*(math.sin(theta_radians))*pig_time - 0.5*(GRAVITY**2)
 
 # Difference between the birds height and the pig's height:
 vertical_distance = vertical_height - y1
