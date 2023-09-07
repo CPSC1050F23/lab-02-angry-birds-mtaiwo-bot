@@ -96,8 +96,8 @@ print("Enter the time in seconds to calculate the bird's position:")
 time = float(input())
 
 # Calculate the x and y coordinates of the bird at the inputted time
-horizontal_position = intial_velocity*math.cos(launch_angle_radians)*new_time
-vertical_position = slingshot_height + intial_velocity*math.sin(launch_angle_radians)*new_time - 0.5*GRAVITY*time**2
+horizontal_position = intial_velocity*math.cos(launch_angle_radians)*time
+vertical_position = slingshot_height + intial_velocity*math.sin(launch_angle_radians)*time - 0.5*GRAVITY*time**2
 # Print the results like below. Replace X & Y with calculated numbers. Shorten the numbers to 2 significant figures (0.02, 12.44, etc.)
     # Coordinates of bird at X seconds: X, Y
 print(f'Coordinates of bird at {time} seconds: ({horizontal_position:.2f}, {vertical_position:.2f}')
