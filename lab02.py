@@ -55,9 +55,9 @@ print(horizontal_distance)
 
 
 # STEP 2
-x1 = float(input("Enter the x-coordinate of the pig:"))
+x1 = float(input("Enter the x-coordinate of the pig: "))
 x2 = 0
-print("Enter the x-coordinate of the pig:")
+print(x1)
 # Get the pig's x-coordinate as input
 
 y1 = float(input("Enter the y-coordinate of the pig:"))
