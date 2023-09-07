@@ -60,15 +60,13 @@ print(f'{horizontal_distance:.2f}')
 # Get the pig's x-coordinate as input
 print("Enter the x-coordinate of the pig:")
 x1 = float(input())
-x2 = 0
- 
+
 print("Enter the y-coordinate of the pig:")
 # Get the pig's y-coordinate as input
-y1 = float(input())
-y2 = slingshot_height 
+y1 = float(input()) 
 
 # Calculate the straight-line distance from the bird & slingshot to the pig
-straight_line_distance = math.sqrt((x1-x2)**2 + (y1-y2)**2)
+straight_line_distance = math.sqrt((x1-0)**2 + (y1-slingshot_height)**2)
 #x1,y1 are the pigs coordinates.
 #x2,y2 are the birds from the slingshot so 0 and the height of the slingshot.
 
