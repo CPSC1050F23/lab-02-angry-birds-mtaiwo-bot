@@ -49,9 +49,9 @@ print(f"Bird's maximum horizontal distance: {horizontal_distance:.2f} feet")
 print(f"Max height of the bird: {height:.2f} feet")
    
     # The duration of the bird's flight in seconds
-print(f'{time:.2f}')
+
     # The bird's maximum possible horizontal distance
-print(f'{horizontal_distance:.2f}')
+
 
 
 # STEP 2
