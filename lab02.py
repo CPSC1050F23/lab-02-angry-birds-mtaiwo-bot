@@ -56,12 +56,12 @@ print(horizontal_distance)
 
 # STEP 2
 
-
+print("Enter the x-coordinate of the pig: {x1:.2f}")
 # Get the pig's x-coordinate as input
 x1 = float(input("Enter the x-coordinate of the pig:"))
 x2 = 0
  
-print("Enter the y-coordinate of the pig:")
+print("Enter the y-coordinate of the pig: {y1:.2f}")
 # Get the pig's y-coordinate as input
 y1 = float(input("Enter the y-coordinate of the pig:"))
 y2 = h 
