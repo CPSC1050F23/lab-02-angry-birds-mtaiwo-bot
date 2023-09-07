@@ -58,12 +58,12 @@ print(horizontal_distance)
 
 print("Enter the x-coordinate of the pig:")
 # Get the pig's x-coordinate as input
-x1 = float(input())
+x1 = float(input(print))
 x2 = 0
-
+ 
 print("Enter the y-coordinate of the pig:")
 # Get the pig's y-coordinate as input
-y1 = float(input())
+y1 = float(input(print))
 y2 = h 
 
 # Calculate the straight-line distance from the bird & slingshot to the pig
