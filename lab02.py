@@ -5,9 +5,10 @@ Assignment:     Lab 01
 Course:         CPSC1051
 Lab Section:    003
 
-CODE DESCRIPTION
+CODE DESCRIPTION: The objective is to get the bird to hit the pig by 
+finding the coordinates of the bird and the time when it hits the pig.
 
-"""
+
 
 import math
 
