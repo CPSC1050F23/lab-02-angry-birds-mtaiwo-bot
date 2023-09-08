@@ -7,7 +7,7 @@ Lab Section:    003
 
 CODE DESCRIPTION: The objective is to get the bird to hit the pig by 
 finding the coordinates of the bird and the time when it hits the pig.
-
+"""
 
 
 import math
@@ -101,4 +101,4 @@ horizontal_position = intial_velocity*math.cos(theta_radians)*time
 vertical_position = slingshot_height + intial_velocity*(math.sin(theta_radians))*time - 0.5*GRAVITY*(time**2)
 # Print the results like below. Replace X & Y with calculated numbers. Shorten the numbers to 2 significant figures (0.02, 12.44, etc.)
     # Coordinates of bird at X seconds: X, Y
-print(f"Coordinates of bird at {time} seconds: ({horizontal_position:.2f}, {vertical_position:.2f})")
+print(f'Coordinates of bird at {time} seconds: ({horizontal_position:.2f}, {vertical_position:.2f})')
